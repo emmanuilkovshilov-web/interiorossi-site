@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О компании InterioRossi — мебель на заказ с 2013 года. Собственное производство 3200 м², 40+ мастеров, 847 проектов в Москве и Московской области.">
+  <meta name="keywords" content="InterioRossi о компании, мебельная студия Москва, производство мебели на заказ, история компании">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="О компании — InterioRossi | Мебель на заказ с 2013 года">
+  <meta property="og:description" content="Собственное производство мебели в Москве с 2013 года. 3200 м² цеха, 40+ мастеров, гарантия 24 месяца.">
+  <meta property="og:url" content="https://emmanuilkovshilov-web.github.io/interiorossi-site/about.html">
+  <meta property="og:locale" content="ru_RU">
+  <title>О компании — InterioRossi | Мебель на заказ с 2013 года</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "О компании InterioRossi",
+    "description": "Студия мебели на заказ с 2013 года. Собственное производство в Москве. 847 реализованных проектов.",
+    "url": "https://emmanuilkovshilov-web.github.io/interiorossi-site/about.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://emmanuilkovshilov-web.github.io/interiorossi-site/" },
+        { "@type": "ListItem", "position": 2, "name": "О нас", "item": "https://emmanuilkovshilov-web.github.io/interiorossi-site/about.html" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="header scrolled" id="header">
+
+    <div class="hdr-top">
+      <div class="container">
+        <div class="hdr-top-row">
+          <div class="hdr-address">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Москва · пн–сб, 9:00–19:00 · по записи</span>
+          </div>
+          <div class="hdr-top-right">
+            <a href="projects.html" class="hdr-tlink">Портфолио</a>
+            <div class="hdr-client" id="hdrClient">
+              <button class="hdr-tlink hdr-client-btn" id="hdrClientBtn" aria-expanded="false">
+                Клиенту
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="hdr-client-menu" id="hdrClientMenu" role="menu">
+                <a href="index.html#process" role="menuitem">Как сделать заказ</a>
+                <a href="#" role="menuitem">Доставка и сборка</a>
+                <a href="#" role="menuitem">Гарантия 24 месяца</a>
+                <a href="index.html#reviews" role="menuitem">Отзывы</a>
+                <a href="#" role="menuitem">Рассрочка 0%</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hdr-main">
+      <div class="container">
+        <div class="hdr-main-row">
+
+          <a href="index.html" class="logo">
+            <span class="logo-icon">IR</span>
+            <div class="logo-texts">
+              <span class="logo-name">InterioRossi</span>
+              <span class="logo-sub">Студия мебели</span>
+            </div>
+          </a>
+
+          <div class="catalog-wrap" id="catalogWrap">
+            <button class="catalog-btn" id="catalogBtn" aria-expanded="false" aria-haspopup="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+              Каталог
+              <svg class="cat-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+
+          <div class="catalog-overlay" id="catalogOverlay"></div>
+          <div class="catalog-mega" id="catalogMega" role="region" aria-label="Каталог мебели">
+            <div class="mega-grid-inner">
+              <div class="mega-col">
+                <div class="mega-col-title">Каталог мебели</div>
+                <ul>
+                  <li><a href="#"><span class="mega-cat-icon">🍳</span>Кухни</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">🚪</span>Шкафы-купе</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">👔</span>Гардеробные</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">📚</span>Стеллажи и полки</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">🛋</span>Мебель для гостиной</a></li>
+                  <li><a href="index.html#categories" class="mega-all">Весь каталог →</a></li>
+                </ul>
+              </div>
+              <div>
+                <div class="mega-col-title">Разделы</div>
+                <div class="mega-pages">
+                  <a href="index.html#partners" class="mega-page-link">
+                    <div class="mega-page-title">Дизайнерам</div>
+                    <div class="mega-page-desc">Условия партнёрства, NDA, процент от заказа</div>
+                  </a>
+                  <a href="about.html" class="mega-page-link">
+                    <div class="mega-page-title">О компании</div>
+                    <div class="mega-page-desc">12 лет на рынке, 847 проектов, команда</div>
+                  </a>
+                  <a href="projects.html" class="mega-page-link">
+                    <div class="mega-page-title">Проекты</div>
+                    <div class="mega-page-desc">Кейсы кухонь, шкафов, коммерческих объектов</div>
+                  </a>
+                  <a href="index.html#process" class="mega-page-link">
+                    <div class="mega-page-title">Процесс работы</div>
+                    <div class="mega-page-desc">От замера до монтажа за 5 этапов</div>
+                  </a>
+                  <a href="#" class="mega-page-link">
+                    <div class="mega-page-title">Гарантии</div>
+                    <div class="mega-page-desc">24 месяца, фиксированная цена, контроль качества</div>
+                  </a>
+                  <a href="contacts.html" class="mega-page-link">
+                    <div class="mega-page-title">Контакты</div>
+                    <div class="mega-page-desc">Адрес, телефон, мессенджеры, форма связи</div>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="mega-quick">
+                  <div class="mega-quick-title">Свяжитесь с нами</div>
+                  <a href="tel:+79252867206" class="mega-quick-phone">+7 (925) 286-72-06</a>
+                  <div class="mega-quick-hours">пн–сб, 9:00–19:00</div>
+                  <button class="mega-quick-cta" data-quiz-open>Рассчитать проект</button>
+                  <div class="mega-quick-msgs">
+                    <a href="https://t.me/+79252867206">Telegram</a>
+                    <a href="https://wa.me/79252867206">WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="hdr-nav">
+            <a href="index.html#projects" class="hdr-nav-link">Видео работ</a>
+            <a href="index.html#partners" class="hdr-nav-link">Дизайнерам</a>
+            <a href="contacts.html" class="hdr-nav-link">Контакты</a>
+          </nav>
+
+          <div class="hdr-contact">
+            <div class="hdr-phone-block">
+              <a href="tel:+79252867206" class="hdr-phone">+7 (925) 286-72-06</a>
+              <button class="hdr-callback" id="hdrCallback">Заказать звонок</button>
+            </div>
+            <div class="hdr-msgs">
+              <a href="mailto:info@interiorossi.ru" class="hdr-msg email" aria-label="Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://t.me/+79252867206" class="hdr-msg tg" aria-label="Telegram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </a>
+              <a href="https://wa.me/79252867206" class="hdr-msg wa" aria-label="WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+            <button class="btn btn-cta" data-quiz-open>Рассчитать проект</button>
+          </div>
+
+          <button class="burger" id="burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mob-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" placeholder="Поиск мебели...">
+      </div>
+      <ul>
+        <li class="mob-catalog-toggle">
+          <button id="mobCatalogToggle">
+            Каталог
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="mob-catalog-list" id="mobCatalogList">
+            <li><a href="#">Шкафы-купе</a></li>
+            <li><a href="#">Гардеробные</a></li>
+            <li><a href="#">Кухни</a></li>
+            <li><a href="#">Детские</a></li>
+            <li><a href="#">Спальни</a></li>
+            <li><a href="index.html#categories">Весь каталог →</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#projects" class="nav-link">Видео работ</a></li>
+        <li><a href="index.html#process" class="nav-link">Как работаем</a></li>
+        <li><a href="index.html#reviews" class="nav-link">Отзывы</a></li>
+        <li><a href="index.html#partners" class="nav-link">Дизайнерам</a></li>
+        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="tel:+79252867206" class="hdr-phone">+7 (925) 286-72-06</a>
+        <button class="btn btn-cta btn-full" data-quiz-open>Рассчитать проект</button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Главная</a><span>/</span><span>О нас</span></div>
+        <h1 class="page-title">О компании</h1>
+        <p class="page-subtitle">12 лет делаем мебель, которая совпадёт с тем, что вы представляли</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-story">
+          <div class="about-text">
+            <p class="section-eyebrow">Наша история</p>
+            <h2 class="section-title">Начали с одного цеха,<br>стали производством</h2>
+            <p>В 2013 году Артём Росси открыл небольшой цех в Подмосковье — 200 м² и 4 мастера. Первыми клиентами были знакомые и рекомендации от рекомендаций.</p>
+            <p>Принцип с первого дня был один: <strong>делать так, как хочет клиент, а не так, как удобно нам.</strong> Это значило отказываться от «стандартных» решений и браться за нестандартные задачи.</p>
+            <p>Сегодня — 3200 м² производственных площадей, 40+ мастеров, 847 реализованных проектов в 23 городах России.</p>
+          </div>
+          <div class="about-img-ph" style="background:linear-gradient(135deg,#2C1810,#8B6F47)">
+            <span>Основатель компании</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Наши принципы</p>
+          <h2 class="section-title">Что делает нас другими</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Мы не говорим «нет»</h3>
+            <p>Берёмся за нестандартные задачи, которые другие отказываются выполнять. Аквариумы в стенах, криволинейные фасады, нестандартные размеры — всё решаемо.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Срок — в договоре</h3>
+            <p>Дата сдачи фиксируется в договоре. При нарушении платим компенсацию 0.5% в день. За 12 лет ни разу не просрочили более чем на 2 дня.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Образцы домой</h3>
+            <p>Привозим образцы материалов к вам домой. Выбираете цвет при вашем освещении, в вашем интерьере — никаких сюрпризов при доставке.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h3>Гарантия 24 месяца</h3>
+            <p>Официальная гарантия 24 месяца на всю мебель. При любой проблеме — бесплатный выезд и устранение в течение 5 рабочих дней.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow light">В цифрах</p>
+          <h2 class="section-title light">InterioRossi сегодня</h2>
+        </div>
+        <div class="numbers-grid">
+          <div class="number-item"><strong>12</strong><span>лет на рынке</span></div>
+          <div class="number-item"><strong>847</strong><span>реализованных проектов</span></div>
+          <div class="number-item"><strong>3200 м²</strong><span>производственных площадей</span></div>
+          <div class="number-item"><strong>40+</strong><span>мастеров в штате</span></div>
+          <div class="number-item"><strong>23</strong><span>города присутствия</span></div>
+          <div class="number-item"><strong>4.9</strong><span>средний рейтинг</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Наша команда</p>
+          <h2 class="section-title">Люди, которые делают мебель</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-ava" style="background:linear-gradient(135deg,#5C3D2E,#8B6F47)">АР</div>
+            <h3>Артём Росси</h3>
+            <span>Основатель и производственный директор</span>
+            <p>20 лет в мебельном производстве</p>
+          </div>
+          <div class="team-card">
+            <div class="team-ava" style="background:linear-gradient(135deg,#2D3561,#5C6E94)">МК</div>
+            <h3>Михаил Карпов</h3>
+            <span>Главный технолог</span>
+            <p>Контролирует каждый этап производства</p>
+          </div>
+          <div class="team-card">
+            <div class="team-ava" style="background:linear-gradient(135deg,#1C2B1C,#5C8C5C)">ЕС</div>
+            <h3>Елена Смирнова</h3>
+            <span>Старший дизайнер</span>
+            <p>300+ реализованных 3D-проектов</p>
+          </div>
+          <div class="team-card">
+            <div class="team-ava" style="background:linear-gradient(135deg,#3D1C5C,#7A4A9A)">АД</div>
+            <h3>Алексей Дорохов</h3>
+            <span>Руководитель монтажа</span>
+            <p>Сборка любой сложности</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-cta-banner">
+      <div class="container">
+        <div class="banner-inner">
+          <div>
+            <h2>Готовы обсудить ваш проект?</h2>
+            <p>Бесплатный расчёт без обязательств — ответ за 2 часа</p>
+          </div>
+          <button class="btn btn-cta" data-quiz-open>Рассчитать проект</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding: 24px 0">
+        <p>© 2025 InterioRossi. <a href="index.html">На главную</a></p>
+        <div class="footer-legal"><a href="#">Политика конфиденциальности</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quiz overlay -->
+  <div class="quiz-overlay" id="quizOverlay"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -3,13 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="InterioRossi — мебель на заказ в Москве. 12 лет опыта, 847 проектов, гарантия 24 месяца.">
-  <title>InterioRossi — Мебель на заказ</title>
+  <meta name="description" content="InterioRossi — мебель на заказ в Москве и Московской области. Кухни, шкафы, гардеробные, детские, спальни. Собственное производство, гарантия 24 месяца, срок в договоре.">
+  <meta name="keywords" content="мебель на заказ Москва, кухни на заказ Москва, шкафы купе на заказ, гардеробная на заказ, мебель Московская область, InterioRossi">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="InterioRossi">
+
+  <!-- Open Graph — для Яндекс и соцсетей -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="InterioRossi — Мебель на заказ в Москве">
+  <meta property="og:description" content="Кухни, шкафы, гардеробные, детские, спальни на заказ. Собственное производство. Гарантия 24 месяца. Срок в договоре.">
+  <meta property="og:url" content="https://emmanuilkovshilov-web.github.io/interiorossi-site/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="InterioRossi">
+
+  <title>InterioRossi — Мебель на заказ в Москве | Кухни, шкафы, гардеробные</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/quiz.css">
+
+  <!-- Schema.org — структурированные данные для поиска и ИИ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "InterioRossi",
+    "alternateName": "Интерио Росси",
+    "description": "Студия мебели на заказ в Москве и Московской области. Кухни, шкафы, гардеробные, детские комнаты, спальни. Собственное производство с 2013 года. Гарантия 24 месяца.",
+    "url": "https://emmanuilkovshilov-web.github.io/interiorossi-site/",
+    "telephone": "+79252867206",
+    "foundingDate": "2013",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Москва",
+      "addressRegion": "Московская область",
+      "addressCountry": "RU"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+79252867206",
+      "contactType": "customer service",
+      "availableLanguage": "Russian"
+    },
+    "sameAs": [
+      "https://t.me/+79252867206",
+      "https://wa.me/79252867206"
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Москва" },
+      { "@type": "AdministrativeArea", "name": "Московская область" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Мебель на заказ",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Кухни на заказ", "description": "Угловые, прямые, П-образные кухни, кухни с островом в Москве" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Шкафы-купе и гардеробные на заказ", "description": "Встроенные шкафы, гардеробные комнаты, зеркальные фасады" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Детские комнаты на заказ", "description": "Трансформируемые системы, кровати-чердаки, рабочие зоны" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Спальни на заказ", "description": "Встроенные шкафы, мягкие изголовья, скрытое освещение" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Кабинеты на заказ", "description": "Домашние кабинеты, библиотеки, рабочие зоны" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Гостиные на заказ", "description": "Медиастены, книжные шкафы, ниши для декора" } }
+      ]
+    },
+    "numberOfEmployees": { "@type": "QuantitativeValue", "value": 40 }
+  }
+  </script>
 </head>
 <body>
 
@@ -27,7 +95,7 @@
           </div>
 
           <div class="hdr-top-right">
-            <a href="pages/projects.html" class="hdr-tlink">Портфолио</a>
+            <a href="projects.html" class="hdr-tlink">Портфолио</a>
 
             <div class="hdr-client" id="hdrClient">
               <button class="hdr-tlink hdr-client-btn" id="hdrClientBtn" aria-expanded="false">
@@ -97,11 +165,11 @@
                     <div class="mega-page-title">Дизайнерам</div>
                     <div class="mega-page-desc">Условия партнёрства, NDA, процент от заказа</div>
                   </a>
-                  <a href="pages/about.html" class="mega-page-link">
+                  <a href="about.html" class="mega-page-link">
                     <div class="mega-page-title">О компании</div>
                     <div class="mega-page-desc">12 лет на рынке, 847 проектов, команда</div>
                   </a>
-                  <a href="pages/projects.html" class="mega-page-link">
+                  <a href="projects.html" class="mega-page-link">
                     <div class="mega-page-title">Проекты</div>
                     <div class="mega-page-desc">Кейсы кухонь, шкафов, коммерческих объектов</div>
                   </a>
@@ -113,7 +181,7 @@
                     <div class="mega-page-title">Гарантии</div>
                     <div class="mega-page-desc">3 года, фиксированная цена, контроль качества</div>
                   </a>
-                  <a href="pages/contacts.html" class="mega-page-link">
+                  <a href="contacts.html" class="mega-page-link">
                     <div class="mega-page-title">Контакты</div>
                     <div class="mega-page-desc">Адрес, телефон, мессенджеры, форма связи</div>
                   </a>
@@ -141,7 +209,7 @@
           <nav class="hdr-nav">
             <a href="#projects" class="hdr-nav-link">Видео работ</a>
             <a href="#partners" class="hdr-nav-link">Дизайнерам</a>
-            <a href="pages/contacts.html" class="hdr-nav-link">Контакты</a>
+            <a href="contacts.html" class="hdr-nav-link">Контакты</a>
           </nav>
 
           <!-- Phone + messengers + CTA -->
@@ -197,7 +265,7 @@
         <li><a href="#process" class="nav-link">Как работаем</a></li>
         <li><a href="#reviews" class="nav-link">Отзывы</a></li>
         <li><a href="#partners" class="nav-link">Дизайнерам</a></li>
-        <li><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
+        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
       </ul>
       <div class="mobile-menu-footer">
         <a href="tel:+79252867206" class="hdr-phone">+7 (925) 286-72-06</a>
@@ -259,7 +327,7 @@
                       <div class="hero-card-stat"><div class="hero-card-stat-val">Премиум</div><div class="hero-card-stat-lbl">Класс</div></div>
                       <div class="hero-card-stat"><div class="hero-card-stat-val">3 г.</div><div class="hero-card-stat-lbl">Гарантия</div></div>
                     </div>
-                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+                    <a href="projects.html" class="hero-card-link">Смотреть кейс →</a>
                   </div>
                 </div>
 
@@ -280,7 +348,7 @@
                       <div class="hero-card-stat"><div class="hero-card-stat-val">МДФ эмаль</div><div class="hero-card-stat-lbl">Фасады</div></div>
                       <div class="hero-card-stat"><div class="hero-card-stat-val">45 дн.</div><div class="hero-card-stat-lbl">Срок</div></div>
                     </div>
-                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+                    <a href="projects.html" class="hero-card-link">Смотреть кейс →</a>
                   </div>
                 </div>
 
@@ -301,7 +369,7 @@
                       <div class="hero-card-stat"><div class="hero-card-stat-val">Egger</div><div class="hero-card-stat-lbl">Материал</div></div>
                       <div class="hero-card-stat"><div class="hero-card-stat-val">30 дн.</div><div class="hero-card-stat-lbl">Срок</div></div>
                     </div>
-                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+                    <a href="projects.html" class="hero-card-link">Смотреть кейс →</a>
                   </div>
                 </div>
 
@@ -322,7 +390,7 @@
                       <div class="hero-card-stat"><div class="hero-card-stat-val">Премиум</div><div class="hero-card-stat-lbl">Класс</div></div>
                       <div class="hero-card-stat"><div class="hero-card-stat-val">60 дн.</div><div class="hero-card-stat-lbl">Срок</div></div>
                     </div>
-                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+                    <a href="projects.html" class="hero-card-link">Смотреть кейс →</a>
                   </div>
                 </div>
 
@@ -490,7 +558,7 @@
           </button>
         </div>
         <div class="section-cta">
-          <a href="pages/projects.html" class="btn btn-outline">Смотреть все проекты</a>
+          <a href="projects.html" class="btn btn-outline">Смотреть все проекты</a>
         </div>
       </div>
     </section>
@@ -845,8 +913,8 @@
         <div class="footer-col">
           <h4>Компания</h4>
           <ul>
-            <li><a href="pages/about.html">О нас</a></li>
-            <li><a href="pages/projects.html">Проекты</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="projects.html">Проекты</a></li>
             <li><a href="#process">Как работаем</a></li>
             <li><a href="#reviews">Отзывы</a></li>
             <li><a href="#partners">Дизайнерам</a></li>

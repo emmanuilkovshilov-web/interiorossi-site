@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# AI crawlers — allow indexing for neural search
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://emmanuilkovshilov-web.github.io/interiorossi-site/sitemap.xml
