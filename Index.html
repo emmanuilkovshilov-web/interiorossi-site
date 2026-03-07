@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InterioRossi — мебель на заказ в Москве. 12 лет опыта, 847 проектов, гарантия 3 года.">
+  <title>InterioRossi — Мебель на заказ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="header" id="header">
+
+    <!-- ── Top bar ── -->
+    <div class="hdr-top">
+      <div class="container">
+        <div class="hdr-top-row">
+
+          <div class="hdr-address">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Москва · пн–сб, 9:00–19:00 · по записи</span>
+          </div>
+
+          <div class="hdr-top-right">
+            <a href="pages/projects.html" class="hdr-tlink">Портфолио</a>
+
+            <div class="hdr-client" id="hdrClient">
+              <button class="hdr-tlink hdr-client-btn" id="hdrClientBtn" aria-expanded="false">
+                Клиенту
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="hdr-client-menu" id="hdrClientMenu" role="menu">
+                <a href="#process" role="menuitem">Как сделать заказ</a>
+                <a href="#" role="menuitem">Доставка и сборка</a>
+                <a href="#" role="menuitem">Гарантия 3 года</a>
+                <a href="#reviews" role="menuitem">Отзывы</a>
+                <a href="#" role="menuitem">Рассрочка 0%</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Main row ── -->
+    <div class="hdr-main">
+      <div class="container">
+        <div class="hdr-main-row">
+
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <span class="logo-icon">IR</span>
+            <div class="logo-texts">
+              <span class="logo-name">InterioRossi</span>
+              <span class="logo-sub">Студия мебели</span>
+            </div>
+          </a>
+
+          <!-- Catalog mega-menu -->
+          <div class="catalog-wrap" id="catalogWrap">
+            <button class="catalog-btn" id="catalogBtn" aria-expanded="false" aria-haspopup="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+              Каталог
+              <svg class="cat-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+
+          <!-- Mega-menu overlay + panel (outside catalog-wrap for fixed positioning) -->
+          <div class="catalog-overlay" id="catalogOverlay"></div>
+          <div class="catalog-mega" id="catalogMega" role="region" aria-label="Каталог мебели">
+            <div class="mega-grid-inner">
+
+              <!-- Column 1: Каталог мебели -->
+              <div class="mega-col">
+                <div class="mega-col-title">Каталог мебели</div>
+                <ul>
+                  <li><a href="#"><span class="mega-cat-icon">🍳</span>Кухни</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">🚪</span>Шкафы-купе</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">👔</span>Гардеробные</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">📚</span>Стеллажи и полки</a></li>
+                  <li><a href="#"><span class="mega-cat-icon">🛋</span>Мебель для гостиной</a></li>
+                  <li><a href="#categories" class="mega-all">Весь каталог →</a></li>
+                </ul>
+              </div>
+
+              <!-- Column 2: Разделы сайта -->
+              <div>
+                <div class="mega-col-title">Разделы</div>
+                <div class="mega-pages">
+                  <a href="#partners" class="mega-page-link">
+                    <div class="mega-page-title">Дизайнерам</div>
+                    <div class="mega-page-desc">Условия партнёрства, NDA, процент от заказа</div>
+                  </a>
+                  <a href="pages/about.html" class="mega-page-link">
+                    <div class="mega-page-title">О компании</div>
+                    <div class="mega-page-desc">12 лет на рынке, 847 проектов, команда</div>
+                  </a>
+                  <a href="pages/projects.html" class="mega-page-link">
+                    <div class="mega-page-title">Проекты</div>
+                    <div class="mega-page-desc">Кейсы кухонь, шкафов, коммерческих объектов</div>
+                  </a>
+                  <a href="#process" class="mega-page-link">
+                    <div class="mega-page-title">Процесс работы</div>
+                    <div class="mega-page-desc">От замера до монтажа за 5 этапов</div>
+                  </a>
+                  <a href="#" class="mega-page-link">
+                    <div class="mega-page-title">Гарантии</div>
+                    <div class="mega-page-desc">3 года, фиксированная цена, контроль качества</div>
+                  </a>
+                  <a href="pages/contacts.html" class="mega-page-link">
+                    <div class="mega-page-title">Контакты</div>
+                    <div class="mega-page-desc">Адрес, телефон, мессенджеры, форма связи</div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Column 3: Quick contact -->
+              <div>
+                <div class="mega-quick">
+                  <div class="mega-quick-title">Свяжитесь с нами</div>
+                  <a href="tel:+79991234567" class="mega-quick-phone">+7 (999) 123-45-67</a>
+                  <div class="mega-quick-hours">пн–сб, 9:00–19:00</div>
+                  <button class="mega-quick-cta" data-quiz-open>Рассчитать проект</button>
+                  <div class="mega-quick-msgs">
+                    <a href="#">Telegram</a>
+                    <a href="#">WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Nav links -->
+          <nav class="hdr-nav">
+            <a href="#projects" class="hdr-nav-link">Видео работ</a>
+            <a href="#partners" class="hdr-nav-link">Дизайнерам</a>
+            <a href="pages/contacts.html" class="hdr-nav-link">Контакты</a>
+          </nav>
+
+          <!-- Phone + messengers + CTA -->
+          <div class="hdr-contact">
+            <div class="hdr-phone-block">
+              <a href="tel:+79991234567" class="hdr-phone">+7 (999) 123-45-67</a>
+              <button class="hdr-callback" id="hdrCallback">Заказать звонок</button>
+            </div>
+            <div class="hdr-msgs">
+              <a href="mailto:info@interiorossi.ru" class="hdr-msg email" aria-label="Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="#" class="hdr-msg tg" aria-label="Telegram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </a>
+              <a href="#" class="hdr-msg wa" aria-label="WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+            <button class="btn btn-cta" data-quiz-open>Рассчитать проект</button>
+          </div>
+
+          <button class="burger" id="burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Mobile menu ── -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mob-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" placeholder="Поиск мебели...">
+      </div>
+      <ul>
+        <li class="mob-catalog-toggle">
+          <button id="mobCatalogToggle">
+            Каталог
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="mob-catalog-list" id="mobCatalogList">
+            <li><a href="#">Шкафы-купе</a></li>
+            <li><a href="#">Гардеробные</a></li>
+            <li><a href="#">Кухни</a></li>
+            <li><a href="#">Детские</a></li>
+            <li><a href="#">Спальни</a></li>
+            <li><a href="#categories">Весь каталог →</a></li>
+          </ul>
+        </li>
+        <li><a href="#projects" class="nav-link">Видео работ</a></li>
+        <li><a href="#process" class="nav-link">Как работаем</a></li>
+        <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+        <li><a href="#partners" class="nav-link">Дизайнерам</a></li>
+        <li><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="tel:+79991234567" class="hdr-phone">+7 (999) 123-45-67</a>
+        <button class="btn btn-cta btn-full" data-quiz-open>Рассчитать проект</button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- ═══════════════ S1: HERO ═══════════════ -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left: text -->
+          <div>
+            <div class="hero-eyebrow">Мебель на заказ · Москва</div>
+            <h1 class="hero-headline">
+              Вы получите ровно то,<br>
+              что утвердили —<br>
+              <em>в срок и без доплат</em>
+            </h1>
+            <p class="hero-sub">
+              Кухни, шкафы и&nbsp;гардеробные по&nbsp;вашему проекту.
+              Цена и сроки зафиксированы в&nbsp;договоре.
+            </p>
+            <div class="hero-ctas">
+              <button class="btn-hero-primary" data-quiz-open>
+                Рассчитать стоимость
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </button>
+              <a href="#partners" class="btn-hero-designer">
+                Я дизайнер — условия
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: project card -->
+          <div>
+            <div class="hero-card">
+              <div class="hero-card-img">
+                <div class="hero-card-badge">Коммерческий объект</div>
+                <div class="hero-card-ph">
+                  <svg width="40" height="40" stroke="currentColor" stroke-width="1" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                  <div style="margin-top:6px;font-size:.75rem">Фото проекта</div>
+                </div>
+              </div>
+              <div class="hero-card-body">
+                <div class="hero-card-title">ХК «Крылья Советов»</div>
+                <div class="hero-card-meta">Зал и зоны отдыха · Премиум</div>
+                <div class="hero-card-stats">
+                  <div class="hero-card-stat">
+                    <div class="hero-card-stat-val">Blum</div>
+                    <div class="hero-card-stat-lbl">Фурнитура</div>
+                  </div>
+                  <div class="hero-card-stat">
+                    <div class="hero-card-stat-val">Премиум</div>
+                    <div class="hero-card-stat-lbl">Класс</div>
+                  </div>
+                  <div class="hero-card-stat">
+                    <div class="hero-card-stat-val">3 г.</div>
+                    <div class="hero-card-stat-lbl">Гарантия</div>
+                  </div>
+                </div>
+                <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TRUST ═══════════════ -->
+    <section class="trust-section">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="trust-num">0 срывов</div>
+            <div class="trust-label">за последние 3 года</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/></svg>
+            </div>
+            <div class="trust-num">Цена фикс</div>
+            <div class="trust-label">в договоре без доплат</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <div class="trust-num">847</div>
+            <div class="trust-label">реализованных проектов</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div class="trust-num">3 года</div>
+            <div class="trust-label">гарантия на мебель</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ QUIZ CTA STRIP ═══════════════ -->
+    <section class="quiz-cta-strip">
+      <div class="container">
+        <div class="quiz-cta-strip-inner">
+          <div class="quiz-cta-strip-text">
+            <div class="quiz-cta-strip-title">Узнайте стоимость вашей мебели за 2 минуты</div>
+            <div class="quiz-cta-strip-sub">Ответьте на 7–9 вопросов — получите персональный расчёт</div>
+          </div>
+          <button class="quiz-cta-strip-btn" data-quiz-open>
+            Рассчитать стоимость
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ S2: КЕЙСЫ КАРУСЕЛЬ ═══════════════ -->
+    <section class="cases section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Наши работы</p>
+          <h2 class="section-title">Ваша ситуация — наше решение</h2>
+          <p class="section-desc">Не просто красивые фото, а реальные задачи клиентов и то, как мы их решили</p>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="cases-carousel" id="casesCarousel">
+
+            <div class="case-card">
+              <div class="case-image">
+                <div class="case-img-ph" style="--c1:#5C3D2E;--c2:#A07855"><span>Кухня</span></div>
+                <div class="case-badge">Москва, ЖК Символ</div>
+              </div>
+              <div class="case-content">
+                <div class="case-meta"><span class="case-type">Кухня</span><span class="case-area">18 м²</span></div>
+                <h3>Кухня без лишней стены</h3>
+                <div class="case-task"><strong>Задача:</strong> Объединить кухню с гостиной, сохранив максимум хранения</div>
+                <div class="case-solution"><strong>Решение:</strong> Угловой гарнитур с островом-барной стойкой, ниши под потолок</div>
+                <div class="case-review">
+                  <div class="ava-ph">А</div>
+                  <div class="review-text"><p>"Боялась, что остров займёт всё. Получилось наоборот — стало просторнее"</p><span>Анна, 34 года</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-image">
+                <div class="case-img-ph" style="--c1:#2D3561;--c2:#5C6E94"><span>Гардеробная</span></div>
+                <div class="case-badge">СПб, ЖК Северная звезда</div>
+              </div>
+              <div class="case-content">
+                <div class="case-meta"><span class="case-type">Гардеробная</span><span class="case-area">6 м²</span></div>
+                <h3>Гардеробная для двоих в 6 м²</h3>
+                <div class="case-task"><strong>Задача:</strong> Уместить гардероб мужа и жены с разными потребностями</div>
+                <div class="case-solution"><strong>Решение:</strong> Зонирование по высоте и глубине, выдвижные секции</div>
+                <div class="case-review">
+                  <div class="ava-ph">М</div>
+                  <div class="review-text"><p>"Наконец нашлось место для всего. Больше никаких споров за полки"</p><span>Михаил и Ксения</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-image">
+                <div class="case-img-ph" style="--c1:#1C2B1C;--c2:#5C8C5C"><span>Детская</span></div>
+                <div class="case-badge">Москва, ЖК Алые паруса</div>
+              </div>
+              <div class="case-content">
+                <div class="case-meta"><span class="case-type">Детская</span><span class="case-area">12 м²</span></div>
+                <h3>Детская, которая растёт с ребёнком</h3>
+                <div class="case-task"><strong>Задача:</strong> Мебель для 7-летнего сына, актуальная через 10 лет</div>
+                <div class="case-solution"><strong>Решение:</strong> Трансформируемая система: кровать растёт, стол перепрофилируется</div>
+                <div class="case-review">
+                  <div class="ava-ph">Е</div>
+                  <div class="review-text"><p>"Сын в восторге. Мебель прослужит ему и в студенческие годы"</p><span>Елена, 38 лет</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-image">
+                <div class="case-img-ph" style="--c1:#2C2218;--c2:#7A6548"><span>Кабинет</span></div>
+                <div class="case-badge">Москва, ЖК Headliner</div>
+              </div>
+              <div class="case-content">
+                <div class="case-meta"><span class="case-type">Кабинет</span><span class="case-area">16 м²</span></div>
+                <h3>Домашний кабинет как офис мечты</h3>
+                <div class="case-task"><strong>Задача:</strong> Профессиональная обстановка дома с системой хранения</div>
+                <div class="case-solution"><strong>Решение:</strong> Встроенные шкафы от пола до потолка, L-образный стол</div>
+                <div class="case-review">
+                  <div class="ava-ph">А</div>
+                  <div class="review-text"><p>"Работаю дома 5 лет — наконец есть настоящий кабинет, не уголок с ноутбуком"</p><span>Андрей, 42 года</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="casesPrev" aria-label="Предыдущий">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-dots" id="casesDots"></div>
+          <button class="carousel-btn" id="casesNext" aria-label="Следующий">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="section-cta">
+          <a href="pages/projects.html" class="btn btn-outline">Смотреть все проекты</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ S3: МЫ НЕ ГОВОРИМ НЕТ ═══════════════ -->
+    <section class="no-limits section section-dark" id="noLimits">
+      <div class="container">
+        <div class="no-limits-grid">
+          <div class="nl-text">
+            <p class="section-eyebrow light">Нестандартные решения</p>
+            <h2 class="section-title light">Мы не говорим<br><em>«нет»</em></h2>
+            <p class="section-desc light">Каждый проект уникален. Мы не подгоняем вашу идею под шаблон — мы создаём именно то, что вы задумали.</p>
+            <div class="nl-example">
+              <span class="nl-tag">Пример</span>
+              <p>Клиент хотел встроить аквариум 200л в перегородку между гостиной и спальней с внутренней подсветкой и скрытым оборудованием</p>
+              <div class="nl-result">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Выполнено в срок. Аквариум работает 3 года без единого обращения
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Обсудить вашу идею</a>
+          </div>
+          <div class="nl-visual">
+            <div class="before-after">
+              <div class="ba-item">
+                <div class="ba-img ba-before">
+                  <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1"><path d="M3 3h18v13H3z"/><path d="M8 21l4-5 4 5"/><circle cx="8.5" cy="8.5" r="1.5"/></svg>
+                </div>
+                <span>Эскиз</span>
+              </div>
+              <div class="ba-arrow">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+              <div class="ba-item">
+                <div class="ba-img ba-after">
+                  <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <span>Результат</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ S4: КОМПЕТЕНЦИЯ ═══════════════ -->
+    <section class="competence section" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Что делаем</p>
+          <h2 class="section-title">Полный спектр мебели на заказ</h2>
+          <p class="section-desc">Производство в собственных цехах — контроль качества на каждом этапе</p>
+        </div>
+
+        <div class="masonry-grid">
+          <div class="mi span-2" data-cat="Кухни"><div class="mi-bg" style="--c1:#5C3D2E;--c2:#A07855"></div><div class="mi-ov"><h3>Кухни</h3><span>от 180 000 ₽</span></div></div>
+          <div class="mi" data-cat="Шкафы-купе"><div class="mi-bg" style="--c1:#2D3561;--c2:#5C6E94"></div><div class="mi-ov"><h3>Шкафы-купе</h3><span>от 45 000 ₽</span></div></div>
+          <div class="mi" data-cat="Гардеробные"><div class="mi-bg" style="--c1:#1C2B1C;--c2:#4A7A4A"></div><div class="mi-ov"><h3>Гардеробные</h3><span>от 90 000 ₽</span></div></div>
+          <div class="mi row-2" data-cat="Детские"><div class="mi-bg" style="--c1:#3D1C5C;--c2:#7A4A9A"></div><div class="mi-ov"><h3>Детские</h3><span>от 120 000 ₽</span></div></div>
+          <div class="mi" data-cat="Спальни"><div class="mi-bg" style="--c1:#2C1A1A;--c2:#7A4A4A"></div><div class="mi-ov"><h3>Спальни</h3><span>от 150 000 ₽</span></div></div>
+          <div class="mi" data-cat="Кабинеты"><div class="mi-bg" style="--c1:#1A2C1A;--c2:#3D5C3D"></div><div class="mi-ov"><h3>Кабинеты</h3><span>от 100 000 ₽</span></div></div>
+          <div class="mi" data-cat="Гостиные"><div class="mi-bg" style="--c1:#2C2518;--c2:#7A6548"></div><div class="mi-ov"><h3>Гостиные</h3><span>от 200 000 ₽</span></div></div>
+          <div class="mi" data-cat="Прихожие"><div class="mi-bg" style="--c1:#1A1A2C;--c2:#4A4A7A"></div><div class="mi-ov"><h3>Прихожие</h3><span>от 60 000 ₽</span></div></div>
+          <div class="mi" data-cat="Ванные"><div class="mi-bg" style="--c1:#1A2C2C;--c2:#3D7A7A"></div><div class="mi-ov"><h3>Ванные</h3><span>от 80 000 ₽</span></div></div>
+        </div>
+
+        <div class="production-block">
+          <div class="prod-video">
+            <div class="prod-thumb" style="background:linear-gradient(135deg,#1A1A1A,#3D3020)">
+              <button class="play-btn" id="videoPlay" aria-label="Смотреть видео с производства">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="prod-text">
+            <h3>Наше производство</h3>
+            <p>Собственный цех 3200 м², современное оборудование, контроль качества на каждом этапе.</p>
+            <ul class="prod-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Собственное производство в Москве</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Немецкое оборудование Homag</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Материалы Egger, Blum, Häfele</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>40+ мастеров в штате</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ S5: ПРОЦЕСС ═══════════════ -->
+    <section class="process section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Как работаем</p>
+          <h2 class="section-title">7 шагов от идеи до готовой мебели</h2>
+          <p class="section-desc"><strong>Срок каждого этапа фиксируется в договоре.</strong> Вы всегда знаете, что происходит.</p>
+        </div>
+        <div class="process-track">
+
+          <div class="ps" data-step="01">
+            <div class="ps-bubble">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .93h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.74a16 16 0 006.29 6.29l1.17-1.17a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="ps-body"><h3>Консультация</h3><p>Звонок или встреча — обсуждаем задачу, стиль, бюджет</p><span class="ps-time">1–2 дня</span></div>
+          </div>
+
+          <div class="ps" data-step="02">
+            <div class="ps-bubble">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="ps-body"><h3>Замер</h3><p>Выезд специалиста, точные замеры, фиксация особенностей</p><span class="ps-time">По вашему графику</span></div>
+          </div>
+
+          <div class="ps" data-step="03">
+            <div class="ps-bubble">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div class="ps-body"><h3>3D-проект и материалы</h3><p>Визуализация, выбор фасадов, фурнитуры, образцы домой</p><span class="ps-time">3–5 дней</span></div>
+          </div>
+
+          <div class="ps" data-step="04">
+            <div class="ps-bubble">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+            </div>
+            <div class="ps-body"><h3>Договор</h3><p>Фиксируем сроки, стоимость и все детали. Аванс 50%</p><span class="ps-time">1 день</span></div>
+          </div>
+
+          <div class="ps" data-step="05">
+            <div class="ps-bubble">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <div class="ps-body"><h3>Производство</h3><p>Изготовление на собственном производстве под контролем технолога</p><span class="ps-time">21–45 дней</span></div>
+          </div>
+
+          <div class="ps" data-step="06">
+            <div class="ps-bubble">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="ps-body"><h3>Доставка и сборка</h3><p>Доставляем и собираем в согласованный день. Убираем за собой.</p><span class="ps-time">1 день</span></div>
+          </div>
+
+          <div class="ps last" data-step="07">
+            <div class="ps-bubble gold">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div class="ps-body"><h3>Сдача и гарантия</h3><p>Подписываем акт, вы получаете гарантийный талон</p><span class="ps-time guarantee-badge">Гарантия 3 года</span></div>
+          </div>
+
+        </div>
+        <div class="process-cta">
+          <p>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            При нарушении сроков — компенсация 0.5% от суммы заказа за каждый день
+          </p>
+          <a href="#contact" class="btn btn-primary">Начать проект</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ S6: ПАРТНЁРСТВО ═══════════════ -->
+    <section class="partners section section-cream" id="partners">
+      <div class="container">
+        <div class="partners-inner">
+          <div class="partners-text">
+            <p class="section-eyebrow">Для дизайнеров и архитекторов</p>
+            <h2 class="section-title">Партнёрская программа</h2>
+            <p class="section-desc">Теперь вы знаете, как мы работаем. Предлагаем вашим клиентам качество, которое не подведёт.</p>
+            <div class="benefits">
+              <div class="benefit">
+                <div class="benefit-icon">%</div>
+                <div><strong>Комиссия до 10%</strong><p>от стоимости каждого заказа</p></div>
+              </div>
+              <div class="benefit">
+                <div class="benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div><strong>Персональный менеджер</strong><p>ведёт ваш проект от начала до конца</p></div>
+              </div>
+              <div class="benefit">
+                <div class="benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                </div>
+                <div><strong>Портфолио для вас</strong><p>профессиональная фотосъёмка готовых проектов</p></div>
+              </div>
+              <div class="benefit">
+                <div class="benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div><strong>Гибкие условия</strong><p>согласуем детали индивидуально</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="partners-form-wrap">
+            <div class="form-card">
+              <h3>Обсудить сотрудничество</h3>
+              <form class="form" id="partnerForm" data-form="partner">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Ваше имя" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form-input phone-input" required>
+                </div>
+                <div class="form-group">
+                  <select name="role" class="form-input form-select">
+                    <option value="">Кто вы?</option>
+                    <option value="designer">Дизайнер интерьера</option>
+                    <option value="architect">Архитектор</option>
+                    <option value="builder">Строитель / подрядчик</option>
+                    <option value="agency">Агентство</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Обсудить проект</button>
+                <p class="form-note">Отвечаем в течение 2 часов в рабочее время</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ S7: ОТЗЫВЫ ═══════════════ -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Отзывы клиентов</p>
+          <h2 class="section-title">Что говорят те, кто уже получил результат</h2>
+          <p class="section-desc">Не «всё понравилось», а конкретно: что боялись и что получилось</p>
+        </div>
+        <div class="reviews-grid">
+
+          <div class="rv-card featured">
+            <div class="rv-header">
+              <div class="rv-ava">Н</div>
+              <div><strong>Наталья К.</strong><span>Кухня + гостиная, Москва</span><div class="stars">★★★★★</div></div>
+            </div>
+            <p>"Боялась, что мебель окажется другого оттенка — такое бывало с другими. Привезли образцы домой, выбрала при своём освещении. Готовая кухня — один в один."</p>
+            <div class="rv-project" style="background:linear-gradient(135deg,#5C3D2E,#8B6F47)"><span>Кухня 22 м²</span></div>
+          </div>
+
+          <div class="rv-card">
+            <div class="rv-header">
+              <div class="rv-ava">С</div>
+              <div><strong>Сергей Р.</strong><span>Гардеробная, СПб</span><div class="stars">★★★★★</div></div>
+            </div>
+            <p>"Думал, что затянут сроки — прошлый подрядчик опоздал на 3 месяца. InterioRossi сдали за 32 дня вместо оговорённых 35."</p>
+          </div>
+
+          <div class="rv-card">
+            <div class="rv-header">
+              <div class="rv-ava">О</div>
+              <div><strong>Ольга М.</strong><span>Детская, Краснодар</span><div class="stars">★★★★★</div></div>
+            </div>
+            <p>"Жили далеко, приехать не могли. Всё сделали онлайн: 3D, согласование, оплата. Приехали только на приёмку. Отлично организовано."</p>
+          </div>
+
+          <div class="rv-card">
+            <div class="rv-header">
+              <div class="rv-ava">Д</div>
+              <div><strong>Дмитрий и Ирина</strong><span>Спальня + прихожая, Москва</span><div class="stars">★★★★★</div></div>
+            </div>
+            <p>"Заказали сразу два помещения. Думали, одно пострадает. Нет — обе комнаты сделаны идеально и в один день."</p>
+          </div>
+
+        </div>
+        <div class="reviews-totals">
+          <div class="rv-total"><strong>4.9</strong><div class="stars">★★★★★</div><span>средний рейтинг</span></div>
+          <div class="rv-divider"></div>
+          <div class="rv-total"><strong>280+</strong><span>отзывов на Яндекс.Картах</span></div>
+          <div class="rv-divider"></div>
+          <div class="rv-total"><strong>94%</strong><span>клиентов рекомендуют нас</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ S8: КОНТАКТ ═══════════════ -->
+    <section class="contact section section-dark" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-left">
+            <p class="section-eyebrow light">Начать проект</p>
+            <h2 class="section-title light">Получите бесплатный расчёт</h2>
+            <div class="contact-guarantees">
+              <div class="g-item">
+                <div class="g-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <div><strong>Бесплатно</strong><p>Расчёт без оплаты</p></div>
+              </div>
+              <div class="g-item">
+                <div class="g-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+                <div><strong>Без обязательств</strong><p>Расчёт не обязывает к заказу</p></div>
+              </div>
+              <div class="g-item">
+                <div class="g-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div><strong>Ответ за 2 часа</strong><p>В рабочее время</p></div>
+              </div>
+            </div>
+            <!-- Social proof near CTA — CXL +68% -->
+            <div class="contact-proof">
+              <div class="rv-ava sm">В</div>
+              <div>
+                <p>"Написал вечером — ответили утром с готовым расчётом. Очень удобно"</p>
+                <span>Виктор Т., кухня 24 м²</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="form-card">
+              <form class="form" id="contactForm" data-form="lead">
+                <div class="form-group">
+                  <label class="form-label" for="c-name">Имя</label>
+                  <input type="text" id="c-name" name="name" placeholder="Как вас зовут?" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-phone">Телефон</label>
+                  <input type="tel" id="c-phone" name="phone" placeholder="+7 (___) ___-__-__" class="form-input phone-input" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-msg">Что нужно сделать?</label>
+                  <textarea id="c-msg" name="message" placeholder="Кухня, спальня, гардеробная — опишите задачу и примерные размеры..." class="form-input form-textarea" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full btn-large">
+                  Получить расчёт
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <p class="form-privacy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo"><span class="logo-icon">IR</span><span class="logo-name">InterioRossi</span></a>
+          <p>Мебель на заказ. Делаем именно то, что вы задумали — без компромиссов.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="ВКонтакте">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.523-2.049-1.727-1.033-1.01-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.677-1.253.677-1.845 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.221 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.169.508.271.508.221 0 .407-.136.813-.542 1.253-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.474-.085.712-.559.712z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Компания</h4>
+          <ul>
+            <li><a href="pages/about.html">О нас</a></li>
+            <li><a href="pages/projects.html">Проекты</a></li>
+            <li><a href="#process">Как работаем</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#partners">Дизайнерам</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="#">Кухни</a></li>
+            <li><a href="#">Шкафы-купе</a></li>
+            <li><a href="#">Гардеробные</a></li>
+            <li><a href="#">Детские</a></li>
+            <li><a href="#">Спальни</a></li>
+            <li><a href="#">Кабинеты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="tel:+79991234567" class="footer-phone">+7 (999) 123-45-67</a>
+          <a href="mailto:info@interiorossi.ru">info@interiorossi.ru</a>
+          <p>Москва, ул. Мебельная, 12</p>
+          <p class="footer-hours">Пн–Пт: 9:00–19:00<br>Сб: 10:00–17:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 InterioRossi. Все права защищены.</p>
+        <div class="footer-legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Закрыть">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h3 id="modalTitle">Заявка отправлена!</h3>
+    <p>Свяжемся с вами в течение 2 рабочих часов</p>
+    <button class="btn btn-primary" id="modalOk">Отлично</button>
+  </div>
+
+  <!-- ═══════════════ FAB — floating phone button ═══════════════ -->
+  <div class="fab-wrap" id="fabWrap">
+
+    <!-- Phone button -->
+    <a href="tel:+79991234567" class="fab-btn" id="fabBtn" aria-label="Позвонить нам">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+      <span class="fab-pulse"></span>
+    </a>
+
+  </div>
+
+  <!-- ═══════════════ QUIZ MODAL ═══════════════ -->
+  <div class="quiz-overlay" id="quizOverlay" role="dialog" aria-modal="true" aria-label="Калькулятор стоимости мебели">
+    <div class="quiz-modal">
+
+      <button class="quiz-close" id="quizClose" aria-label="Закрыть">✕</button>
+
+      <!-- Progress -->
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-fill" id="quizProgressFill" style="width:0%"></div>
+      </div>
+
+      <!-- Step dots -->
+      <div class="quiz-dots" id="quizDots"></div>
+
+      <!-- Head -->
+      <div class="quiz-head">
+        <div class="quiz-step-label" id="quizStepLabel"></div>
+        <div class="quiz-step-title" id="quizStepTitle"></div>
+        <div class="quiz-step-sub"   id="quizStepSub"></div>
+      </div>
+
+      <!-- Body -->
+      <div class="quiz-body" id="quizBody"></div>
+
+      <!-- Footer -->
+      <div class="quiz-footer">
+        <div class="quiz-footer-left">
+          <button class="quiz-btn-back" id="quizBtnBack" disabled>← Назад</button>
+          <div class="quiz-price-live" id="quizPriceLive"></div>
+        </div>
+        <button class="quiz-btn-next" id="quizBtnNext" disabled>Далее →</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════ STICKY MOBILE BAR ═══════════════ -->
+  <div class="quiz-sticky-bar" id="quizStickyBar">
+    <div class="quiz-sticky-bar-text">
+      <strong>Узнайте стоимость за 2 минуты</strong>
+      Ответьте на вопросы — получите расчёт
+    </div>
+    <button class="quiz-sticky-btn" data-quiz-open>Рассчитать</button>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

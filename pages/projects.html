@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио проектов InterioRossi — кухни, гардеробные, детские, спальни на заказ в Москве.">
+  <title>Проекты — InterioRossi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../Index.html" class="logo">
+          <span class="logo-icon">IR</span>
+          <span class="logo-name">InterioRossi</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../Index.html#projects" class="nav-link">Проекты</a></li>
+          <li><a href="../Index.html#process" class="nav-link">Как работаем</a></li>
+          <li><a href="../Index.html#categories" class="nav-link">Каталог</a></li>
+          <li><a href="../Index.html#reviews" class="nav-link">Отзывы</a></li>
+          <li><a href="../Index.html#partners" class="nav-link">Дизайнерам</a></li>
+        </ul>
+        <div class="nav-right">
+          <a href="tel:+79991234567" class="nav-phone">+7 (999) 123-45-67</a>
+          <a href="../Index.html#contact" class="btn btn-primary btn-sm">Рассчитать</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="../Index.html#projects" class="nav-link">Проекты</a></li>
+        <li><a href="../Index.html#process" class="nav-link">Как работаем</a></li>
+        <li><a href="../Index.html#categories" class="nav-link">Каталог</a></li>
+        <li><a href="../Index.html#reviews" class="nav-link">Отзывы</a></li>
+        <li><a href="../Index.html#partners" class="nav-link">Дизайнерам</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="../Index.html#contact" class="btn btn-primary btn-full">Рассчитать стоимость</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../Index.html">Главная</a>
+          <span>/</span>
+          <span>Проекты</span>
+        </div>
+        <h1 class="page-title">Реализованные проекты</h1>
+        <p class="page-subtitle">847 выполненных заказов. Каждый — уникальная задача и найденное решение.</p>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section">
+      <div class="container">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">Все</button>
+          <button class="filter-tab" data-filter="kitchen">Кухни</button>
+          <button class="filter-tab" data-filter="wardrobe">Шкафы / гардеробные</button>
+          <button class="filter-tab" data-filter="kids">Детские</button>
+          <button class="filter-tab" data-filter="bedroom">Спальни</button>
+          <button class="filter-tab" data-filter="office">Кабинеты</button>
+          <button class="filter-tab" data-filter="living">Гостиные</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section section">
+      <div class="container">
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project cards -->
+          <div class="project-card" data-cat="kitchen">
+            <div class="project-img" style="--c1:#5C3D2E;--c2:#A07855">
+              <span>Кухня</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Кухня</span><span>18 м² · Москва</span></div>
+              <h3>Кухня без лишней стены</h3>
+              <p>Объединение с гостиной, угловой гарнитур с островом</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="wardrobe">
+            <div class="project-img" style="--c1:#2D3561;--c2:#5C6E94">
+              <span>Гардеробная</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Гардеробная</span><span>6 м² · Санкт-Петербург</span></div>
+              <h3>Гардеробная для двоих</h3>
+              <p>Зонирование по высоте и глубине, выдвижные секции</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="kids">
+            <div class="project-img" style="--c1:#1C2B1C;--c2:#5C8C5C">
+              <span>Детская</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Детская</span><span>12 м² · Москва</span></div>
+              <h3>Детская, которая растёт с ребёнком</h3>
+              <p>Трансформируемая система, кровать-чердак</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="office">
+            <div class="project-img" style="--c1:#2C2218;--c2:#7A6548">
+              <span>Кабинет</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Кабинет</span><span>16 м² · Москва</span></div>
+              <h3>Домашний кабинет-офис</h3>
+              <p>Шкафы от пола до потолка, L-образный стол с кабельными каналами</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="bedroom">
+            <div class="project-img" style="--c1:#2C1A1A;--c2:#7A4A4A">
+              <span>Спальня</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Спальня</span><span>20 м² · Краснодар</span></div>
+              <h3>Спальня с гардеробной зоной</h3>
+              <p>Встроенные шкафы за кроватью, скрытое освещение</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="kitchen">
+            <div class="project-img" style="--c1:#3D2C1A;--c2:#9A7A4A">
+              <span>Кухня</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Кухня</span><span>24 м² · Новосибирск</span></div>
+              <h3>Кухня-студия с барной стойкой</h3>
+              <p>Открытая планировка, выдвижные системы хранения</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="living">
+            <div class="project-img" style="--c1:#2C2518;--c2:#7A6548">
+              <span>Гостиная</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Гостиная</span><span>30 м² · Москва</span></div>
+              <h3>Гостиная с медиастеной</h3>
+              <p>Встроенный телевизор, ниши для декора, скрытые ящики</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="wardrobe">
+            <div class="project-img" style="--c1:#1A1A2C;--c2:#4A4A7A">
+              <span>Шкаф-купе</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Шкаф-купе</span><span>Прихожая · Москва</span></div>
+              <h3>Шкаф-купе в нишу</h3>
+              <p>Зеркальные фасады, системное хранение верхней одежды</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-cat="kids">
+            <div class="project-img" style="--c1:#3D1C5C;--c2:#7A4A9A">
+              <span>Детская</span>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-ghost btn-sm">Смотреть проект</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Детская</span><span>14 м² · СПб</span></div>
+              <h3>Детская для двоих</h3>
+              <p>Двухъярусная кровать, зонирование рабочих мест</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="projects-load-more">
+          <button class="btn btn-outline" id="loadMore">Загрузить ещё проекты</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="page-cta-banner">
+      <div class="container">
+        <div class="banner-inner">
+          <div>
+            <h2>Не нашли похожий проект?</h2>
+            <p>Расскажите о вашей задаче — разработаем решение специально для вас</p>
+          </div>
+          <a href="../Index.html#contact" class="btn btn-primary">Получить расчёт</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding: 24px 0">
+        <p>© 2025 InterioRossi. <a href="../Index.html">На главную</a></p>
+        <div class="footer-legal">
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Filter tabs
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.project-card');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.dataset.filter;
+        cards.forEach(card => {
+          const show = filter === 'all' || card.dataset.cat === filter;
+          card.style.display = show ? '' : 'none';
+          if (show) card.style.animation = 'fadeIn .4s ease';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
