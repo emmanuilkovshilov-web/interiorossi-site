@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="InterioRossi — мебель на заказ в Москве. 12 лет опыта, 847 проектов, гарантия 3 года.">
+  <meta name="description" content="InterioRossi — мебель на заказ в Москве. 12 лет опыта, 847 проектов, гарантия 24 месяца.">
   <title>InterioRossi — Мебель на заказ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,7 @@
               <div class="hdr-client-menu" id="hdrClientMenu" role="menu">
                 <a href="#process" role="menuitem">Как сделать заказ</a>
                 <a href="#" role="menuitem">Доставка и сборка</a>
-                <a href="#" role="menuitem">Гарантия 3 года</a>
+                <a href="#" role="menuitem">Гарантия 24 месяца</a>
                 <a href="#reviews" role="menuitem">Отзывы</a>
                 <a href="#" role="menuitem">Рассрочка 0%</a>
               </div>
@@ -237,37 +237,111 @@
             </div>
           </div>
 
-          <!-- Right: project card -->
-          <div>
-            <div class="hero-card">
-              <div class="hero-card-img">
-                <div class="hero-card-badge">Коммерческий объект</div>
-                <div class="hero-card-ph">
-                  <svg width="40" height="40" stroke="currentColor" stroke-width="1" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-                  <div style="margin-top:6px;font-size:.75rem">Фото проекта</div>
-                </div>
-              </div>
-              <div class="hero-card-body">
-                <div class="hero-card-title">ХК «Крылья Советов»</div>
-                <div class="hero-card-meta">Зал и зоны отдыха · Премиум</div>
-                <div class="hero-card-stats">
-                  <div class="hero-card-stat">
-                    <div class="hero-card-stat-val">Blum</div>
-                    <div class="hero-card-stat-lbl">Фурнитура</div>
+          <!-- Right: project carousel -->
+          <div class="hero-carousel" id="heroCarousel">
+            <div class="hero-carousel-wrap">
+              <div class="hero-carousel-track" id="heroCarTrack">
+
+                <!-- Slide 1 -->
+                <div class="hero-card">
+                  <div class="hero-card-img">
+                    <div class="hero-card-badge">Коммерческий объект</div>
+                    <div class="hero-card-ph">
+                      <svg width="40" height="40" stroke="currentColor" stroke-width="1" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                      <div style="margin-top:6px;font-size:.75rem">Фото проекта</div>
+                    </div>
                   </div>
-                  <div class="hero-card-stat">
-                    <div class="hero-card-stat-val">Премиум</div>
-                    <div class="hero-card-stat-lbl">Класс</div>
-                  </div>
-                  <div class="hero-card-stat">
-                    <div class="hero-card-stat-val">3 г.</div>
-                    <div class="hero-card-stat-lbl">Гарантия</div>
+                  <div class="hero-card-body">
+                    <div class="hero-card-title">ХК «Крылья Советов»</div>
+                    <div class="hero-card-meta">Зал и зоны отдыха · Премиум</div>
+                    <div class="hero-card-stats">
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">Blum</div><div class="hero-card-stat-lbl">Фурнитура</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">Премиум</div><div class="hero-card-stat-lbl">Класс</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">3 г.</div><div class="hero-card-stat-lbl">Гарантия</div></div>
+                    </div>
+                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
                   </div>
                 </div>
-                <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+
+                <!-- Slide 2 -->
+                <div class="hero-card">
+                  <div class="hero-card-img">
+                    <div class="hero-card-badge">Жилой проект</div>
+                    <div class="hero-card-ph">
+                      <svg width="40" height="40" stroke="currentColor" stroke-width="1" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                      <div style="margin-top:6px;font-size:.75rem">Фото проекта</div>
+                    </div>
+                  </div>
+                  <div class="hero-card-body">
+                    <div class="hero-card-title">Квартира на Кутузовском</div>
+                    <div class="hero-card-meta">Кухня + гостиная · Бизнес</div>
+                    <div class="hero-card-stats">
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">18 п.м.</div><div class="hero-card-stat-lbl">Длина</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">МДФ эмаль</div><div class="hero-card-stat-lbl">Фасады</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">45 дн.</div><div class="hero-card-stat-lbl">Срок</div></div>
+                    </div>
+                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-card">
+                  <div class="hero-card-img">
+                    <div class="hero-card-badge">Загородный дом</div>
+                    <div class="hero-card-ph">
+                      <svg width="40" height="40" stroke="currentColor" stroke-width="1" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                      <div style="margin-top:6px;font-size:.75rem">Фото проекта</div>
+                    </div>
+                  </div>
+                  <div class="hero-card-body">
+                    <div class="hero-card-title">Усадьба в Подмосковье</div>
+                    <div class="hero-card-meta">Гардероб + кабинет · Стандарт</div>
+                    <div class="hero-card-stats">
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">22 п.м.</div><div class="hero-card-stat-lbl">Длина</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">Egger</div><div class="hero-card-stat-lbl">Материал</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">30 дн.</div><div class="hero-card-stat-lbl">Срок</div></div>
+                    </div>
+                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="hero-card">
+                  <div class="hero-card-img">
+                    <div class="hero-card-badge">Коммерческий объект</div>
+                    <div class="hero-card-ph">
+                      <svg width="40" height="40" stroke="currentColor" stroke-width="1" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                      <div style="margin-top:6px;font-size:.75rem">Фото проекта</div>
+                    </div>
+                  </div>
+                  <div class="hero-card-body">
+                    <div class="hero-card-title">Офис TechHub</div>
+                    <div class="hero-card-meta">Ресепшн + переговорные · Премиум</div>
+                    <div class="hero-card-stats">
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">Blum</div><div class="hero-card-stat-lbl">Фурнитура</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">Премиум</div><div class="hero-card-stat-lbl">Класс</div></div>
+                      <div class="hero-card-stat"><div class="hero-card-stat-val">60 дн.</div><div class="hero-card-stat-lbl">Срок</div></div>
+                    </div>
+                    <a href="pages/projects.html" class="hero-card-link">Смотреть кейс →</a>
+                  </div>
+                </div>
+
+              </div><!-- /track -->
+            </div><!-- /wrap -->
+
+            <div class="hero-carousel-footer">
+              <div class="hero-carousel-dots" id="heroCarDots"></div>
+              <div class="hero-carousel-arrows">
+                <button class="hero-car-btn" id="heroCarPrev" aria-label="Назад">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="hero-car-btn" id="heroCarNext" aria-label="Вперёд">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
               </div>
             </div>
-          </div>
+
+          </div><!-- /hero-carousel -->
 
         </div>
       </div>
@@ -302,7 +376,7 @@
             <div class="trust-icon">
               <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             </div>
-            <div class="trust-num">3 года</div>
+            <div class="trust-num">24 мес.</div>
             <div class="trust-label">гарантия на мебель</div>
           </div>
         </div>
@@ -561,7 +635,7 @@
             <div class="ps-bubble gold">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
-            <div class="ps-body"><h3>Сдача и гарантия</h3><p>Подписываем акт, вы получаете гарантийный талон</p><span class="ps-time guarantee-badge">Гарантия 3 года</span></div>
+            <div class="ps-body"><h3>Сдача и гарантия</h3><p>Подписываем акт, вы получаете гарантийный талон</p><span class="ps-time guarantee-badge">Гарантия 24 месяца</span></div>
           </div>
 
         </div>

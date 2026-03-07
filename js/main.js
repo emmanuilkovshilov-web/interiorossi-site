@@ -469,3 +469,111 @@ on(document, 'keydown', e => { if (e.key === 'Escape') modal.close(); });
   sync();
   on(window, 'scroll', sync, { passive: true });
 })();
+
+// ─── 15. Hero carousel (infinite loop) ───────────
+(function initHeroCarousel() {
+  const track = $('#heroCarTrack');
+  const wrap  = track && track.parentElement;
+  const dotsEl = $('#heroCarDots');
+  const prevBtn = $('#heroCarPrev');
+  const nextBtn = $('#heroCarNext');
+  if (!track || !dotsEl) return;
+
+  const realCards = $$('.hero-card', track);
+  const total = realCards.length;
+  const GAP = 16;
+
+  // Clone last → prepend, clone first → append for infinite feel
+  track.prepend(realCards[total - 1].cloneNode(true));
+  track.append(realCards[0].cloneNode(true));
+  const allCards = $$('.hero-card', track); // total + 2 items
+
+  let current = 1; // index 0 = clone of last, 1 = first real card
+  let timer;
+
+  // Dots for real cards only
+  const dots = realCards.map((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'hero-car-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Слайд ' + (i + 1));
+    on(d, 'click', () => goTo(i + 1));
+    dotsEl.appendChild(d);
+    return d;
+  });
+
+  function calcOffset(idx) {
+    const wrapW = wrap.offsetWidth;
+    const cardW = allCards[0].offsetWidth;
+    return (wrapW - cardW) / 2 - idx * (cardW + GAP);
+  }
+
+  function updateVisual(idx) {
+    allCards.forEach((c, i) => c.classList.toggle('is-active', i === idx));
+    const dotIdx = idx === 0 ? total - 1 : idx === total + 1 ? 0 : idx - 1;
+    dots.forEach((d, i) => d.classList.toggle('active', i === dotIdx));
+  }
+
+  function goTo(n) {
+    current = n;
+    track.style.transition = 'transform .45s cubic-bezier(.25,.1,.25,1)';
+    track.style.transform = `translateX(${calcOffset(current)}px)`;
+    updateVisual(current);
+    resetTimer();
+  }
+
+  // After animation ends: silent jump from clone → real counterpart
+  on(track, 'transitionend', () => {
+    if (current === 0) {
+      track.style.transition = 'none';
+      current = total;
+      track.style.transform = `translateX(${calcOffset(current)}px)`;
+      updateVisual(current);
+    } else if (current === total + 1) {
+      track.style.transition = 'none';
+      current = 1;
+      track.style.transform = `translateX(${calcOffset(current)}px)`;
+      updateVisual(current);
+    }
+  });
+
+  on(prevBtn, 'click', () => goTo(current - 1));
+  on(nextBtn, 'click', () => goTo(current + 1));
+
+  // Click on peeking card → navigate to it
+  allCards.forEach((c, i) => on(c, 'click', () => { if (i !== current) goTo(i); }));
+
+  // Swipe
+  let startX = 0;
+  on(track, 'touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  on(track, 'touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+  });
+
+  on(window, 'resize', () => {
+    track.style.transition = 'none';
+    track.style.transform = `translateX(${calcOffset(current)}px)`;
+  });
+
+  // Восстанавливаем позицию при возврате на вкладку
+  on(document, 'visibilitychange', () => {
+    if (!document.hidden) {
+      track.style.transition = 'none';
+      track.style.transform = `translateX(${calcOffset(current)}px)`;
+    }
+  });
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 5000);
+  }
+
+  // Init: wait for layout to settle before calculating offsets
+  function init() {
+    track.style.transition = 'none';
+    track.style.transform = `translateX(${calcOffset(1)}px)`;
+    updateVisual(1);
+    resetTimer();
+  }
+  requestAnimationFrame(() => requestAnimationFrame(init));
+})();
