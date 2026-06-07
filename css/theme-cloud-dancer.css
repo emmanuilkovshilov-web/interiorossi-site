@@ -1,0 +1,205 @@
+/* ================================================================
+   INTERIOR ROSSI — THEME: CLOUD DANCER 2026
+   Synced with Stitch InterioRossi 2026 export
+   Replaces: theme-cloud-dancer.css in your /css/ folder
+   Activate: add this file AFTER style.css in <head>
+   Apply:    add data-theme="cloud-dancer" to <html> tag
+   ================================================================ */
+
+[data-theme="cloud-dancer"] {
+
+  /* ── BACKGROUNDS (Stitch M3 surface scale) ── */
+  --bg:           #fbf9f4;   /* surface / background */
+  --bg-cream:     #f5f3ee;   /* surface-container-low  → stats strip, alt sections */
+  --bg-dark:      #f0eee9;   /* surface-container       → cards bg */
+  --bg-dark2:     #eae8e3;   /* surface-container-high  → deep surfaces */
+
+  /* ── TEXT ── */
+  --text:         #1b1c19;   /* on-surface  — primary text */
+  --text-2:       #434842;   /* on-surface-variant — secondary text */
+  --text-3:       #747871;   /* outline — hints, placeholders */
+
+  /* ── ACCENT (Sage green — darker than old cloud-dancer) ── */
+  --accent:       #4e614e;   /* primary */
+  --accent-h:     #394b39;   /* on-primary-fixed-variant → hover/pressed */
+  --gold:         #4e614e;   /* alias used in style.css */
+  --gold-light:   #667a66;   /* primary-container → soft accent fills */
+
+  /* ── BORDERS ── */
+  --border:       rgba(195,200,192, 0.55);   /* outline-variant */
+  --border-d:     rgba(195,200,192, 0.30);   /* softer borders */
+
+  /* ── SHADOWS (Stitch: very subtle, almost flat) ── */
+  --shadow-sm:    0 1px 4px  rgba(27,28,25, 0.04);
+  --shadow:       0 2px 12px rgba(27,28,25, 0.06);
+  --shadow-lg:    0 8px 40px rgba(27,28,25, 0.09);
+
+  /* ── SURFACE ── */
+  --white:        #ffffff;   /* surface-container-lowest */
+
+  /* ── RADIUS (Stitch is rounder than premium theme) ── */
+  --r:            8px;    /* buttons, inputs, tags */
+  --r-lg:         20px;   /* cards */
+  --r-xl:         32px;   /* hero card, large blocks */
+  --r-cta:        40px;   /* CTA / newsletter section */
+
+  /* ── CTA BUTTON ── */
+  --cta:          #4e614e;
+  --cta-h:        #394b39;
+
+  /* ── FONTS (EB Garamond replaces Playfair Display) ── */
+  --font-h:       'EB Garamond', Georgia, serif;
+  --font-b:       'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+
+  /* ── FOOTER (inverse-surface from Stitch) ── */
+  --footer-bg:    #30312e;
+  --footer-text:  #f2f1ec;
+  --footer-mute:  rgba(242,241,236, 0.55);
+
+  /* ── TRANSITION (same as Stitch: 300ms ease) ── */
+  --transition:   .3s cubic-bezier(.4,0,.2,1);
+}
+
+/* ================================================================
+   STRUCTURAL OVERRIDES
+   Applies Stitch visual patterns to existing HTML structure
+   ================================================================ */
+
+/* ── Header: border instead of heavy shadow ── */
+[data-theme="cloud-dancer"] .site-header,
+[data-theme="cloud-dancer"] header {
+  background: rgba(251,249,244, 0.94);
+  border-bottom: 1px solid rgba(195,200,192, 0.6);
+  box-shadow: none;
+}
+
+/* ── Footer: dark inverse + top radius (Stitch pattern) ── */
+[data-theme="cloud-dancer"] .footer,
+[data-theme="cloud-dancer"] footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  border-radius: 32px 32px 0 0;
+}
+
+[data-theme="cloud-dancer"] .footer a,
+[data-theme="cloud-dancer"] footer a {
+  color: rgba(242,241,236, 0.6);
+}
+
+[data-theme="cloud-dancer"] .footer a:hover,
+[data-theme="cloud-dancer"] footer a:hover {
+  color: var(--gold-light);
+}
+
+/* ── CTA / quiz strip: rounded block ── */
+[data-theme="cloud-dancer"] .quiz-cta-strip,
+[data-theme="cloud-dancer"] .contact-inner,
+[data-theme="cloud-dancer"] .partners-form-wrap {
+  border-radius: var(--r-xl);
+}
+
+/* ── Cards: softer radius ── */
+[data-theme="cloud-dancer"] .case-card,
+[data-theme="cloud-dancer"] .rv-card,
+[data-theme="cloud-dancer"] .form-card,
+[data-theme="cloud-dancer"] .mi {
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(195,200,192, 0.5);
+}
+
+/* ── Hero card (info overlay at bottom): Stitch glassmorphism ── */
+[data-theme="cloud-dancer"] .hero-card {
+  border-radius: var(--r-xl);
+  overflow: hidden;
+}
+
+/* ── Stats strip: surface-container-low bg ── */
+[data-theme="cloud-dancer"] .trust-section {
+  background: var(--bg-cream);
+  border-top: 1px solid rgba(195,200,192, 0.5);
+  border-bottom: 1px solid rgba(195,200,192, 0.5);
+}
+
+/* ── Accent numbers in stats: use primary color ── */
+[data-theme="cloud-dancer"] .trust-section .trust-num,
+[data-theme="cloud-dancer"] .trust-section .stat-value {
+  color: var(--accent);
+}
+
+/* ── Buttons: Stitch style ── */
+[data-theme="cloud-dancer"] .btn-primary,
+[data-theme="cloud-dancer"] .cta-btn,
+[data-theme="cloud-dancer"] button.primary {
+  background: var(--cta);
+  color: #ffffff;
+  border-radius: var(--r);
+  border: none;
+  transition: var(--transition);
+}
+
+[data-theme="cloud-dancer"] .btn-primary:hover,
+[data-theme="cloud-dancer"] .cta-btn:hover {
+  background: var(--cta-h);
+  opacity: 1;
+}
+
+/* ── Tags / badges: secondary-container style ── */
+[data-theme="cloud-dancer"] .tag,
+[data-theme="cloud-dancer"] .badge,
+[data-theme="cloud-dancer"] .material-tag {
+  background: #e9e2d2;      /* secondary-container */
+  color: #696458;           /* on-secondary-container */
+  border-radius: 9999px;
+  border: none;
+}
+
+/* ── Process steps: circle border ── */
+[data-theme="cloud-dancer"] .ps-icon,
+[data-theme="cloud-dancer"] .process-icon {
+  border: 1px solid rgba(195,200,192, 0.6);
+  background: var(--white);
+}
+
+/* ── Hero section: no heavy overlay ── */
+[data-theme="cloud-dancer"] .hero::after {
+  background: linear-gradient(
+    to top,
+    rgba(27,28,25, 0.55) 0%,
+    rgba(27,28,25, 0.2) 50%,
+    transparent 100%
+  );
+}
+
+/* ── Serif italic helper (Stitch uses this pattern) ── */
+[data-theme="cloud-dancer"] .serif-italic,
+[data-theme="cloud-dancer"] h1 em,
+[data-theme="cloud-dancer"] h2 em {
+  font-family: var(--font-h);
+  font-style: italic;
+}
+
+/* ── Section backgrounds alternation (Stitch pattern) ── */
+[data-theme="cloud-dancer"] .process-track,
+[data-theme="cloud-dancer"] section.alt-bg {
+  background: var(--bg-cream);
+}
+
+/* ── Masonry / competence grid items ── */
+[data-theme="cloud-dancer"] .masonry-grid .mi {
+  background: var(--bg-dark);
+}
+
+/* ── Form inputs ── */
+[data-theme="cloud-dancer"] input,
+[data-theme="cloud-dancer"] textarea,
+[data-theme="cloud-dancer"] select {
+  border-color: rgba(195,200,192, 0.7);
+  border-radius: var(--r);
+  background: var(--white);
+}
+
+[data-theme="cloud-dancer"] input:focus,
+[data-theme="cloud-dancer"] textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(78,97,78, 0.12);
+}
